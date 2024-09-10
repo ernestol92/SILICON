@@ -1,0 +1,60 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+
+.item{
+    border: 1px dotted #333;
+    background-color: blanchedalmond;
+    padding: 1rem;
+  
+    display: grid;
+    place-items: center;
+}
+
+.aside{
+    grid-area: aside;
+    display: none;
+}
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+
+
+.grid{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "header"
+    "nav"
+    "main"
+    "footer"
+    
+    ;
+    /* grid template area kommer att jobba med de klasserna ovanför som har fått grid area tilldelat.
+    2 st headers ger t ex 2 platser i gridsystemet.*/
+}
+
+@media(min-width: 768px) { 
+    .aside{
+        display: grid;
+    }
+    .grid{
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "aside main"
+        "aside main"
+        "footer footer"
+        ;
+    }
+}
+/* mediaqueries anv'nds till bl a  se bred och h;jd p[ en enhets viewport hur den ;r orienterad,
+landscape eller portrait. f;redrar anv'ndaren m;rkt tema? sidan blir mer responsiv*/

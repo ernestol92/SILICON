@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-box{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.image{
+width: 100%;
+height: 100%;
+object-fit: cover;
+/* object-position: top; */
+/* object position fokuserar på olika delar av bilden.
+object-fit cover = täcker så mkt som möjligt fast behåller
+rätt skala.
+object+fit fill fyller så mkt av containern som möjligt men
+bilden kan bli disproportionell.  */
+}
