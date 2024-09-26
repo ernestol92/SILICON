@@ -11,6 +11,17 @@
     -webkit-tap-highlight-color: #00000000;
 }
 
+/* UTILITY CLASSES */
+
+.brand-box{
+  border: 1px solid #E2E5F1;
+  border-radius: 5px;
+  width: 158px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     margin: 0;
     padding: 0;
@@ -209,12 +220,33 @@ header .container{
   gap: 2rem;
 }
 #discover-more-btn{
-
+  
 }
 
 .iphone12container{
   display: none;
 }
+
+.brand-container{
+  display: flex;
+  justify-content: center;
+}
+.brand-section{
+  display: flex;
+  float: left;
+  display: none;
+  width: 720px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  gap: 1rem;
+
+}
+
+
+
 
 @media (min-width: 768px){
 
@@ -291,7 +323,19 @@ header .container{
     }
 
 }
+
+.brand-section{
+  display: flex;
+  .logo5{
+    display: none;
+  }
+  .logo6{
+    display: none;
+  }
 }
+
+}
+
 
 
 
@@ -399,6 +443,22 @@ header .container{
         height: auto;
       }
     }
+  }
+
+  .brand-section{
+    width: 1296px;
+    .brand-box{
+      width: 196px;
+      height: 100px;
+    }
+    .logo5{
+      display: flex;
+    }
+
+    .logo6{
+      display: flex;
+    }
+
   }
 }
 

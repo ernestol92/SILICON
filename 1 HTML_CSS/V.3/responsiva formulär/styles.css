@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(51, 92, 106);
+    
+}
+
+/* utility classes
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 20px #222222d0;
+    
+    width:100% ;
+    max-width: 900px;
+    
+}
+.text-center{
+ text-align: center;   
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.wrapper {
+    padding-inline: 1rem;
+    margin: 0 auto;
+    
+}
+.center-screen {
+    display: grid;
+    place-items: center;
+    height: 100svh;
+    
+    
+} */
+
+/* utility classes */
+
+.block{
+    display: block;
+}
+
+.m05{
+    margin: .5rem;
+}
+
+.p05{
+    padding: .5rem;
+}
+
+.mb05{
+    margin: .5rem;
+}
+.wrapper{
+    background-color: rgb(255, 216, 143);
+    margin: 2rem;
+    display: flex;
+    text-align: center;
+
+}
+
+.headline{
+    background-color: rgb(255, 187, 61);
+    width: 30%;
+    height: 80%;
+
+}
+
+.forms{
+    background-color: bisque;
+    width: 900px;
+}
+
+.names{
+        display: flex;
+        gap: 2rem;
+        justify-content: flex-start;
+        
+    }
+
+.email{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+}
+
+.repeat-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter{
+    display: flex;
+    gap: .5rem;
+}
+
+.terms{
+    display: flex;
+    flex-direction: column;
+}
